@@ -1,0 +1,111 @@
+@media (max-width:600px){
+    .nav-bar{
+    margin-left: 5px;
+    }
+    .nav-items{
+        margin-left: 5px;
+        padding-left: 0px;
+    }
+}
+@media  (max-width:320px) {
+    .nav-links{
+    font-size: 10px;
+    }
+}
+@media (max-width:500px) {
+    .my-image>img{
+        width: 200px;
+        height:200px;
+        }
+    .about{
+        width: fit-content;
+    }
+}
+@media (min-width:730px) {
+    .about{    
+       width: 750px;
+       display: flex;
+       justify-content: space-around;
+    }
+
+}
+@media (min-width:550px) and (max-width:660px) {
+
+    .aboutinfo{
+        width: 200px;
+        margin: 10px;
+    }
+}
+@media (max-width:549px) {
+    .about{
+        margin-top: 80px;
+        flex-direction: column;
+    }
+    .aboutinfo{
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    .aboutinfo>a>svg{
+        transform: scale(1);
+    }
+    .edu{
+        width: 200px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .vertical-line{
+        position: relative;
+        left: -70px;
+        top: -5px;
+    }
+    .college , .pu{
+        position: relative;
+        top: -10px;
+        left: 25px;
+    }
+    .skills>h1{
+        text-align: left;
+        margin-left: 12px;
+    }
+    .projects>h1 , .theo, .ems{
+        text-align: left;
+        margin-left: 12px;
+        margin-top: 10px;
+    }
+
+
+}
+@media (min-width:549px) {
+    .edu{
+        margin-top: 150px;
+    }
+    .about{
+        padding-top: 50px;
+    }
+}
+@media (max-width:720px) {
+    .skillbox{
+        padding-top: 10px;
+        margin-top: 5px;
+    }
+}
+@media (min-width:410px) {
+    .college:hover , .pu:hover{
+        transform: scale(1.5) translateX(40px);
+        transition:ease-in-out 0.5s;
+    }
+    .skillbox:hover{
+        transform: scale(1.4);
+        transition:ease-in-out 0.5s;
+    }
+}
+@media (max-width:775px) {
+    .theo>a>img{
+        height: 150px;
+        width: 230px;
+    }
+    .ems>a>img{
+        height: 115px;
+        width: 230px;
+    }
+}

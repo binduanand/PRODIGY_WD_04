@@ -1,0 +1,238 @@
+body{
+    background-color: black;
+    margin-top: 0px;
+}
+.container{
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    margin-top: 0px;
+    z-index: 999;
+}
+.nav-bar{
+    min-width: 200px;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+}
+.nav-items{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 0px;
+    animation-name: nav-animation;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+}
+@keyframes nav-animation {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.nav-links>a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 400;
+    position: relative;
+}
+.nav-links>a::after{
+    content:'';
+    width: 0px;
+    height: 2px;
+    background: #1214b1;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.nav-links>a:hover::after{
+    width: 100%;   
+}
+.about{
+    margin: auto;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 200px;
+    letter-spacing: 3px;
+}
+.my-image>img{
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+    animation-name: pic-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+@keyframes pic-animation {
+    from{transform: translateX(-300px);}
+    to{transform: translateX(0);}
+}
+.aboutinfo{
+    color: whitesmoke;
+    margin: 30px;
+    animation-name: info-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+@keyframes info-animation {
+    from{transform: translateX(200px);}
+    to{transform: translateX(0px);}
+}
+.aboutinfo>h1{
+    color: whitesmoke;
+    text-shadow: #1214b1 2px 1px;
+}
+.aboutinfo>a>svg{
+    color: #1214b1;
+    margin: 10px 20px;
+    transform: scale(2);
+}
+.edu {
+    color: whitesmoke;
+    font-size: 700;
+    text-align: center;
+}
+.vertical-line{
+    height: 150px;
+    width: 3px;
+    background-color: whitesmoke;
+    margin: auto;
+    position: relative;
+    left: -50px;
+    top: -10px;
+
+}
+.horizontal-line1 , .horizontal-line2 {
+    width: 20px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.horizontal-line1{
+    position: relative;
+    top: 30px;
+}
+.horizontal-line2{
+    position: relative;
+    top: 60px;
+}
+.college{
+    width: 200px;
+    position: relative;
+    top: -10px;
+    left: 18px;
+}
+.college>h5 , .pu>h5{
+    margin: 0px;
+    font-size: large;
+}
+
+.college>h6 , .pu>h6{
+    margin: 0px;
+    color: gray;
+}
+
+.pu{
+    width: 200px;
+    position: relative;
+    top: -10px;
+}
+.skills>h1 , .projects>h1{
+    color: whitesmoke;
+    font-size: 700;
+    text-align: center;
+    margin-top: 80px;
+}
+.myskills{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.skillbox{
+    padding:50px;
+    margin: 10px;
+    position: relative;
+    min-width: 200px;
+}
+.skillbox>img{
+    position: relative;
+    left: 65px;    
+}
+.skill-title{
+    position: relative;
+    left: -10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: large;
+    color: whitesmoke;
+}
+.skillbar{
+    background-color: white;
+    width: 180px;
+    height: 5px;
+    border-radius: 3px;
+}
+
+.html .skillpercentage{
+    background-color:#1214b1;
+    width: 80%;
+    height: 5px;
+    border-radius: 5px;
+}
+.css .skillpercentage{
+    background-color:#1214b1;
+    width: 90%;
+    height: 5px;
+    border-radius: 5px;
+}
+.bootstrap .skillpercentage{
+    background-color:#1214b1;
+    width: 60%;
+    height: 5px;
+    border-radius: 5px;
+}
+.python .skillpercentage{
+    background-color:#1214b1;
+    width: 40%;
+    height: 5px;
+    border-radius: 5px;
+}
+.c .skillpercentage{
+    background-color:#1214b1;
+    width: 60%;
+    height: 5px;
+    border-radius: 5px;
+}
+.skill-description{
+    color: grey;
+    width: 180px;
+    text-align: center;
+    font-size: x-small;
+    letter-spacing: 1px;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+.theo , .ems{
+    color: whitesmoke;
+    text-align: center;
+    margin: 20px 50px;
+    min-width: 180px;
+}
+.theo>a>img{
+    height: 300px;
+    width: 600px;
+}
+.ems>a>img{
+    height: 300px;
+    width: 600px;
+}
